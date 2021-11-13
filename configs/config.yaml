@@ -1,0 +1,19 @@
+db:
+  connection: postgresql://admin:qwerty@localhost:5432/excel_base
+  table: test
+
+file_formats:
+  - xlsx
+
+input_dir: ./input/
+done_dir: ./done/
+error_dir: ./error/
+
+markup:
+  first_row_index: 1
+  mapping:
+    A: name
+    D: age
+    B: surname
+
+
